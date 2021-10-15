@@ -33,10 +33,23 @@ function App() {
               A clean and simple interface to organize your favorite websites. Open a new browser tab and see your sites
               load instantly. Try it for free.
             </p>
-            <div className="flex justify-center flex-wrap gap-6"></div>
+            <div className="flex justify-center flex-wrap gap-6">
+              <button type="button" className="btn btn-purple hover:bg-bookmark-white hover:text-black">
+                Get in on Chrome
+              </button>
+              <button type="button" className="btn btn-white hover:bg-bookmark-purple hover:text-white">
+                Get in on Firefox
+              </button>
+            </div>
+          </div>
+          <div className="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10">
+            <img className="w-5/6 h-5/6 sm:3/4 md:w-full md:h-full" src="/imgs/hero-bg.png" alt="" />
           </div>
         </div>
+        <div className="hidden md:block overflow-hidden bg-bookmark-purple rounded-l-full absolute h-80 w-2/4 top-32 right-0 lg:-bottom-28 lg:-right-36"></div>
       </section>
+
+      <section></section>
     </>
   );
 }
