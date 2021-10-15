@@ -16,8 +16,8 @@ function App() {
             Login
           </button>
         </ul>
-        <div className="flex sm:hidden flex-1">
-          <AiOutlineMenu />
+        <div className="flex sm:hidden flex-1 justify-end">
+          <AiOutlineMenu className="w-5 h-5" />
         </div>
       </nav>
     </>
