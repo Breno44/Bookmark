@@ -1,5 +1,5 @@
 import "./App.css";
-import { AiOutlineMenu, AiOutlineDown } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineDown, AiFillFacebook, AiOutlineTwitter } from "react-icons/ai";
 
 function App() {
   return (
@@ -215,6 +215,46 @@ function App() {
           </div>
         </div>
       </section>
+
+      <section className="bg-bookmark-purple text-white py-20">
+        <container className="container">
+          <div className="sm:w-3/4 lg:w-2/4 mx-auto">
+            <p className="font-light uppercase text-center mb-8">35,000+ ALREADY JOINED</p>
+            <h1 className="text-3xl text-center">Stay up-to-date with what we're doing</h1>
+            <div className="flex flex-col sm:flex-row gap-6 mt-8">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                className="focus:outline-none flex-1 px-2 py-3 rounded-md text-black"
+              />
+              <button type="button" className="btn bg-bookmark-red hover:bg-bookmark-white hover:text-black">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </container>
+      </section>
+
+      <footer class="bg-bookmark-blue py-8">
+        <div class="container flex flex-col md:flex-row items-center">
+          <div class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12">
+            <img src="/imgs/logo-bookmark-white.png" alt="" />
+            <ul class="flex text-white uppercase gap-12 text-xs">
+              <li class="cursor-pointer">Features</li>
+              <li class="cursor-pointer">Pricing</li>
+              <li class="cursor-pointer">Contact</li>
+            </ul>
+          </div>
+          <div class="flex gap-10 mt-12 md:mt-0">
+            <span>
+              <AiOutlineTwitter className="text-white text-2xl" />
+            </span>
+            <span>
+              <AiFillFacebook className="text-white text-2xl" />
+            </span>
+          </div>
+        </div>
+      </footer>
     </>
   );
 }
